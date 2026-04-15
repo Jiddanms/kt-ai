@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KT-AI | Next-Gen Academic Intelligence</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blob-glow"></div>
+    <div class="bg-overlay"></div>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars-staggered"></i>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li class="active" data-page="home"><i class="fas fa-house-chimney"></i><span>Overview</span></li>
+            <div class="nav-divider">TOOLS</div>
+            <li data-page="title"><i class="fas fa-wand-magic-sparkles"></i><span>Title Gen</span></li>
+            <li data-page="scholar"><i class="fas fa-microscope"></i><span>Scholar Search</span></li>
+            <li data-page="grammar"><i class="fas fa-pen-fancy"></i><span>Grammar Pro</span></li>
+            <li data-page="biblio"><i class="fas fa-list-check"></i><span>Bibliography</span></li>
+            <li data-page="qa"><i class="fas fa-brain"></i><span>Q&A Predictor</span></li>
+            <li data-page="abstract"><i class="fas fa-bolt-lightning"></i><span>Abstract Summarizer</span></li>
+            <li data-page="citation"><i class="fas fa-magnifying-glass-chart"></i><span>Citation Finder</span></li>
+            <li data-page="rewrite"><i class="fas fa-shield-halved"></i><span>Ethical Rewrite</span></li>
+        </ul>
+    </nav>
+
+    <header class="glass-header">
+        <div class="logo-area">
+            <img src="assets/logo-kt-ai.png" alt="Logo" class="main-logo">
+            <span class="brand-name">KT-AI<span class="dot">.</span></span>
+        </div>
+    </header>
+
+    <main class="main-wrapper" id="mainContent">
+        
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="badge">v2.0 Beta Released</div>
+                <h1>Elevate Your Research <br> With <span class="text-gradient">Artificial Intelligence</span></h1>
+                <p class="hero-subtext">The ultimate companion for students. Streamline your KTI process from title generation to final defense prediction.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary" onclick="scrollToSection('features')">Explore Tools</button>
+                    <button class="btn-secondary">Watch Demo</button>
+                </div>
+            </div>
+
+            <div id="features" class="section-padding">
+                <p class="section-label">Capabilities</p>
+                <h3 class="section-title">Everything you need to <span class="highlight">graduate faster</span></h3>
+                <div class="feature-grid">
+                    <div class="feature-card" onclick="openFeature('title')">
+                        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Title Generator</h4>
+                        <p>Analyze global trends for unique research topics.</p>
+                    </div>
+                    <div class="feature-card" onclick="openFeature('qa')">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Q&A Predictor</h4>
+                        <p>Simulate your defense session with AI examiners.</p>
+                    </div>
+                    <div class="feature-card" onclick="openFeature('grammar')">
+                        <div class="card-icon"><i class="fas fa-feather"></i></div>
+                        <h4>Grammar Pro</h4>
+                        <p>Refine your academic tone to professional standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-padding pricing-area">
+                <div class="glass-card pricing-box">
+                    <span class="pricing-tag">Limited Offer</span>
+                    <h3>Special Student Plan</h3>
+                    <div class="main-price">$10 <small>/ Hour</small></div>
+                    <p>Unlock all 8 premium tools with real-time database access.</p>
+                    <button class="btn-primary full-width">Get Access Now</button>
+                    <p class="price-joke">*Affordable enough to empty your pocket!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-interface" class="page">
+            <div class="ai-container glass-card">
+                <div class="ai-header">
+                    <div class="title-group">
+                        <h2 id="feature-title">Feature</h2>
+                        <span class="status-indicator">● Online</span>
+                    </div>
+                    <p id="feature-desc"></p>
+                </div>
+                <div class="ai-chat-window" id="chatDisplay">
+                    </div>
+                <div class="ai-input-wrapper">
+                    <textarea id="userInput" rows="1" placeholder="Describe your needs..."></textarea>
+                    <button id="sendBtn" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
