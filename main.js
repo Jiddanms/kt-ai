@@ -21,7 +21,7 @@ const pageConfig = {
     qa: { t: "Q&A Predictor", d: "Preparing you for the toughest examiner questions." },
     abstract: { t: "Abstract One-Click Summary", d: "Condensing your hard work into a powerful summary." },
     citation: { t: "Citation Finder", d: "Locating the lost origins of your research quotes." },
-    rewrite: { t: "Ethical Rewriter", d: "Paraphrasing with integrity and academic tone." }
+    rewrite: { t: "Anti-Plagiarism", d: "Paraphrasing with integrity and academic tone." }
 };
 
 function openFeature(id) {
